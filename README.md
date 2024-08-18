@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+# Comet Video Converter Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to the official repository for the Comet Video Converter website. This project hosts the website for Comet, a no-nonsense video conversion tool designed for simplicity and efficiency.
 
-## Setup
+## About Comet
 
-Make sure to install the dependencies:
+Comet is a straightforward video converter that allows you to convert your videos quickly and effortlessly. It is designed to be simple and effective, without unnecessary features.
 
-```bash
-# npm
-npm install
+## Features
 
-# pnpm
-pnpm install
+- **No Data Collection**: Comet does not collect, store, or share any personal data. Your files and activities remain entirely on your device.
+- **Offline Processing**: All video conversions are processed locally on your device using [FFmpeg](https://ffmpeg.org/).
+- **Open Source**: Comet is an open-source project. You can review the source code on [GitHub](https://github.com/Thavarshan/comet).
 
-# yarn
-yarn install
+## Website
 
-# bun
-bun install
-```
+This repository contains the source code for the Comet website, which provides information about the tool, its features, and how to use it. The website is built using modern web technologies to ensure a smooth and responsive user experience.
 
-## Development Server
+## Contributing
 
-Start the development server on `http://localhost:3000`:
+We welcome contributions to improve the website. If you have any suggestions or find any issues, please feel free to open an issue or submit a pull request.
 
-```bash
-# npm
-npm run dev
+## License
 
-# pnpm
-pnpm run dev
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-# yarn
-yarn dev
+## Contact
 
-# bun
-bun run dev
-```
+If you have any questions or concerns, please reach out to us at [Insert Contact Email].
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Thank you for visiting the Comet Video Converter website repository!
