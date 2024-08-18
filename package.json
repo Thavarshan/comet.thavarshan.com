@@ -1,0 +1,32 @@
+{
+  "name": "comet.thavarshan.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.1.5",
+    "@octokit/core": "^6.1.2",
+    "@radix-icons/vue": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.14",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "nuxt": "^3.12.4",
+    "radix-vue": "^1.9.4",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "typescript": "^5.5.4"
+  }
+}

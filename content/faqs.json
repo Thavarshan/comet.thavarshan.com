@@ -1,0 +1,43 @@
+[
+  {
+    "title": "What is Comet?",
+    "content": "Comet is a minimalist, no-nonsense video converter app designed to handle your video conversion needs with ease. It was created because there wasn't an app that did exactly what we wanted—simple, fast, and effective video conversion without unnecessary features."
+  },
+  {
+    "title": "What video formats does Comet support?",
+    "content": "In this initial release, Comet supports a wide range of popular video formats including MP4, MKV, AVI, MOV, and more. We’re working on expanding format support in future updates."
+  },
+  {
+    "title": "Is Comet free to use?",
+    "content": "Yes! Comet is completely free to use for personal video conversion needs. We believe in providing powerful tools without any cost barriers."
+  },
+  {
+    "title": "Which platforms does Comet support?",
+    "content": "Comet is available on Windows, macOS, and Linux. We’ve ensured compatibility across these major operating systems so that everyone can benefit from Comet."
+  },
+  {
+    "title": "Can I trust Comet with my videos?",
+    "content": "Absolutely. Comet processes your videos locally on your machine, so your files are never uploaded or shared. We value your privacy and security."
+  },
+  {
+    "value": "item-8",
+    "title": "This is labeled as an alpha release. What does that mean?",
+    "content": "The alpha label indicates that this is an early version of Comet. While it is functional, it may still have bugs or issues. We encourage you to try it out and share any feedback you have to help us improve."
+  },
+  {
+    "title": "How do I report an issue or provide feedback?",
+    "content": "You can report issues or provide feedback through our GitHub repository. We appreciate all user input as it helps us refine and enhance Comet."
+  },
+  {
+    "title": "Do I need to sign the app to use it?",
+    "content": "No, you can use Comet without code signing. However, certain operating systems might display warnings when running unsigned apps. We're working on getting Comet officially signed in future releases."
+  },
+  {
+    "title": "Will Comet receive updates?",
+    "content": "Yes, we plan to regularly update Comet with new features, bug fixes, and support for more video formats. Stay tuned!"
+  },
+  {
+    "title": "Is Comet open-source?",
+    "content": "Yes, Comet is open-source. You can view the source code, contribute, or report issues via our GitHub repository [here](https://github.com/Thavarshan/comet)."
+  }
+]

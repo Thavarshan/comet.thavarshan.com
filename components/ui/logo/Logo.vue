@@ -1,0 +1,43 @@
+<script setup lang="ts">
+import { cn } from '@/lib/utils';
+
+defineProps<{
+  title?: string;
+  description?: string;
+  href: string;
+  classes?: string;
+}>();
+</script>
+
+<template>
+  <div>
+    <NuxtLink :to="href">
+      <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      :class="cn('w-10 h-10', classes)" fill="none" stroke="currentColor" stroke-width="2"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>Group</title>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group">
+            <rect id="Rectangle" fill-opacity="0" fill="#2563EB" x="0" y="0" width="1024" height="1024"></rect>
+            <rect id="Rectangle" fill="#172554" x="61.0596285" y="61" width="900.879765" height="901"
+              rx="213"></rect>
+            <g id="comet-svgrepo-com" transform="translate(212.2072, 248)" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="66.6666667">
+              <path
+                d="M235.930401,80.9983206 L259.520104,57.4316539 C337.881924,-19.588839 463.750412,-19.076815 541.481791,58.578654 C619.213169,136.234123 619.725694,261.979692 542.629912,340.264987 L471.860802,410.998321 M165.127924,151.698321 L94.3588139,222.464987 M23.5897035,293.131654 L1.15463195e-14,316.698321 M401.058325,481.698321 L353.878918,528.831654 M330.289215,363.831654 L306.699511,387.398321 M235.930401,458.131654 L165.127924,528.798321 M235.930401,269.531654 L23.5897035,481.664987"
+                id="Shape" stroke="#60A5FA"></path>
+              <circle id="Oval" stroke="#2563EB" fill="#2563EB" fill-rule="nonzero"
+                transform="translate(401.0583, 198.865) rotate(45) translate(-401.0583, -198.865)"
+                cx="401.058325" cy="198.864987" r="66.6992587"></circle>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <div :class="cn('ml-2', { 'flex flex-col': title && description })">
+        <h1 class="text-lg font-bold text-slate-900 leading-tight" v-show="title">{{ title }}</h1>
+        <p class="text-sm text-slate-500" v-show="description">{{ description }}</p>
+      </div>
+    </NuxtLink>
+  </div>
+</template>
+
