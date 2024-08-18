@@ -32,13 +32,13 @@ const footerLinks: NavigationLink[] = [
 
 <template>
   <div>
-    <header class="container p-6 flex items-center gap-x-10">
+    <header class="container p-6 flex flex-col md:flex-row items-center gap-y-4 md:gap-x-10">
       <div>
         <Logo href="/" />
       </div>
-      <div class="flex-1 flex items-center justify-between">
+      <div class="flex-1 flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-x-0">
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
             <NavigationMenuItem v-for="section in sections" :key="section.title">
               <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="section.href">
                 {{ section.title }}
@@ -67,7 +67,7 @@ const footerLinks: NavigationLink[] = [
               <p class="text-sm text-slate-500">a simple video converter</p>
             </div>
             <NavigationMenu class="mt-11">
-              <NavigationMenuList>
+              <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
                 <NavigationMenuItem v-for="link in footerLinks" :key="link.title">
                   <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="link.href">
                     {{ link.title }}

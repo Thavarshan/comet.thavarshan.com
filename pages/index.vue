@@ -6,7 +6,15 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArchiveIcon, LaptopIcon, VideoIcon, DownloadIcon, ChevronDownIcon } from '@radix-icons/vue';
+import {
+  ArchiveIcon,
+  LaptopIcon,
+  VideoIcon,
+  DownloadIcon,
+  ChevronDownIcon,
+  ExclamationTriangleIcon,
+  AccessibilityIcon,
+} from '@radix-icons/vue';
 import { ref, onMounted } from 'vue';
 import faqs from '@/content/faqs.json';
 import { Octokit } from '@octokit/core';
@@ -46,7 +54,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="hero" class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+  <section id="hero" class="overflow-hidden pt-20">
     <div class="container p-6">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
@@ -57,7 +65,7 @@ onMounted(async () => {
             Comet is the straightforward video converter you've been looking for. Designed for simplicity, it allows you to convert your videos quickly and effortlessly—no unnecessary features, just effective results.
           </p>
           <div class="mt-8 flex items-center gap-x-6 gap-y-4">
-            <div>
+            <div class="flex items-center gap-x-3">
               <DropdownMenu>
                 <DropdownMenuTrigger>
                   <Button class="gap-x-2">
@@ -75,7 +83,22 @@ onMounted(async () => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
+              <Button as-child variant="secondary">
+                <a href="https://github.com/Thavarshan/comet/issues" target="_blank" class="flex items-center gap-x-2">
+                  <AccessibilityIcon class="size-4" />
+                  Report issue
+                </a>
+              </Button>
             </div>
+          </div>
+          <div class="mt-6 max-w-sm">
+            <Alert variant="destructive">
+              <ExclamationTriangleIcon class="size-4" />
+              <AlertTitle>Heads up!</AlertTitle>
+              <AlertDescription>
+                The app is still in development and may not properly work. Please report any issues you encounter.
+              </AlertDescription>
+            </Alert>
           </div>
         </div>
         <div class="relative mt-12 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
