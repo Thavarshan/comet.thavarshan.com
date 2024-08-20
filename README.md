@@ -10,7 +10,7 @@ Comet is a straightforward video converter that allows you to convert your video
 
 - **No Data Collection**: Comet does not collect, store, or share any personal data. Your files and activities remain entirely on your device.
 - **Offline Processing**: All video conversions are processed locally on your device using [FFmpeg](https://ffmpeg.org/).
-- **Open Source**: Comet is an open-source project. You can review the source code on [GitHub](https://github.com/Thavarshan/comet).
+- **Open Source**: Comet is an open-source project. You can review the source code on [GitHub](https://github.com/stellar-comet/comet).
 
 ## Website
 

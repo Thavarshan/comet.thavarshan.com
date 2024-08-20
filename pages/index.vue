@@ -84,7 +84,7 @@ onMounted(async () => {
                 </DropdownMenuContent>
               </DropdownMenu>
               <Button as-child variant="secondary">
-                <a href="https://github.com/Thavarshan/comet/issues" target="_blank" class="flex items-center gap-x-2">
+                <a href="https://github.com/stellar-comet/comet/issues" target="_blank" class="flex items-center gap-x-2">
                   <AccessibilityIcon class="size-4" />
                   Report issue
                 </a>

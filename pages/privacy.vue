@@ -28,7 +28,7 @@
 
         <h3>Open Source Commitment</h3>
 
-        <p>Comet is an open-source project. You can review our source code on <a href="https://github.com/Thavarshan/comet">GitHub</a> to see for yourself that we prioritize your privacy and security. Our commitment to transparency ensures that you know exactly how your data is handled—or in this case, not handled at all.</p>
+        <p>Comet is an open-source project. You can review our source code on <a href="https://github.com/stellar-comet/comet">GitHub</a> to see for yourself that we prioritize your privacy and security. Our commitment to transparency ensures that you know exactly how your data is handled—or in this case, not handled at all.</p>
 
         <h3>Contact Us</h3>
 

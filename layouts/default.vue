@@ -17,16 +17,16 @@ type NavigationLink = {
 const sections: NavigationLink[] = [
   { title: 'Home', href: '/' },
   { title: 'Features', href: '/#features' },
-  { title: 'Support', href: 'https://github.com/Thavarshan/comet/discussions' },
+  { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
   { title: 'FAQs', href: '/#faqs' },
 ];
 
 const footerLinks: NavigationLink[] = [
-  { title: 'Changelog', href: 'https://github.com/Thavarshan/comet/blob/main/CHANGELOG.md' },
+  { title: 'Changelog', href: 'https://github.com/stellar-comet/comet/blob/main/CHANGELOG.md' },
   { title: 'Disclaimer', href: '/disclaimer' },
   { title: 'Privacy', href: '/privacy' },
   { title: 'Terms', href: '/terms' },
-  { title: 'Support', href: 'https://github.com/Thavarshan/comet/discussions' },
+  { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
 ];
 </script>
 
@@ -47,7 +47,7 @@ const footerLinks: NavigationLink[] = [
           </NavigationMenuList>
         </NavigationMenu>
         <div class="flex items-center gap-x-3">
-          <a href="https://github.com/Thavarshan/comet" target="_blank" class="text-slate-900">
+          <a href="https://github.com/stellar-comet/comet" target="_blank" class="text-slate-900">
             <GithubLogoIcon class="size-6" />
           </a>
           <!-- <Button type="button">Download</Button> -->
