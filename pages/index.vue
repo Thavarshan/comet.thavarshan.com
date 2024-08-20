@@ -189,14 +189,14 @@ onMounted(async () => {
   </section>
   <section id="faqs" class="overflow-hidden py-20">
     <div class="container p-6">
-      <div class="flex flex-col items-center">
+      <div class="max-w-xl mx-auto">
         <h2 class="text-3xl font-medium tracking-tight text-slate-900 text-center">
           Frequently Asked Questions
         </h2>
         <p class="mt-2 text-lg text-slate-600 text-center">
           If you have anything else you want to ask, <a href="mailto:tjthavarshan@gmail.com" class="text-slate-900 underline">reach out to us.</a>.
         </p>
-        <div class="mt-6 max-w-xl max-auto">
+        <div class="mt-6">
           <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
             <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
               <AccordionTrigger :id="`trigger-${item.value}`">
