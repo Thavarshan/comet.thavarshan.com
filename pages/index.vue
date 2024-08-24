@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from '@/components/ui/card';
 import {
   ArchiveIcon,
   LaptopIcon,
@@ -15,74 +14,36 @@ import {
   ExclamationTriangleIcon,
   AccessibilityIcon,
 } from '@radix-icons/vue';
-import { ref, onMounted } from 'vue';
 import faqs from '@/content/faqs.json';
-import { Octokit } from '@octokit/core';
-
-const config = useRuntimeConfig();
-
-const downloadLinks = ref<any>([]);
-
-const defaultValue = 'item-1';
 
 const accordionItems = faqs.map((item, index) => ({
   value: `item-${index + 1}`,
   title: item.title,
   content: item.content,
 }));
-
-async function fetchLatestRelease() {
-  const octokit = new Octokit({ auth: config.githubApiKey });
-
-  const response = await octokit.request('GET /repos/{owner}/{repo}/releases', {
-    owner: config.githubUsername as string || 'Thavarshan',
-    repo: 'comet',
-  });
-
-  downloadLinks.value = response.data[0]
-    .assets
-    .filter((asset: any) => asset.name.includes('comet'))
-    .map((asset: any) => ({
-      name: asset.name,
-      url: asset.browser_download_url,
-    }));
-}
-
-onMounted(async () => {
-  await fetchLatestRelease();
-});
 </script>
 
 <template>
-  <section id="hero" class="overflow-hidden pt-20">
+  <section id="hero" class="overflow-hidden pt-20 pb-24">
     <div class="container p-6">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-          <h1 class="text-4xl font-medium tracking-tight text-slate-900">
-            Effortless Video Conversion
-          </h1>
-          <p class="mt-6 text-lg text-slate-600">
-            Comet is the straightforward video converter you've been looking for. Designed for simplicity, it allows you to convert your videos quickly and effortlessly—no unnecessary features, just effective results.
-          </p>
+          <div>
+            <h1 class="text-4xl font-medium tracking-tight text-slate-900">
+              Effortless Video Conversion
+            </h1>
+            <p class="mt-6 text-lg text-slate-600">
+              Comet is the straightforward video converter you've been looking for. Designed for simplicity, it allows you to convert your videos quickly and effortlessly—no unnecessary features, just effective results.
+            </p>
+          </div>
           <div class="mt-8 flex items-center gap-x-6 gap-y-4">
             <div class="flex items-center gap-x-3">
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <Button class="gap-x-2">
-                    <DownloadIcon class="size-4" />
-                    <span>Download</span>
-                    <ChevronDownIcon class="size-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem v-for="link in downloadLinks" :key="link.name">
-                    <a :href="link.url" target="_blank" class="flex items-center gap-x-2">
-                      <DownloadIcon class="size-4 text-slate-900" />
-                      <span>{{ link.name }}</span>
-                    </a>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <Button class="gap-x-2" as-child>
+                <NuxtLink to="/downloads">
+                  <DownloadIcon class="size-4" />
+                  <span>Download</span>
+                </NuxtLink>
+              </Button>
               <Button as-child variant="secondary">
                 <a href="https://github.com/stellar-comet/comet/issues" target="_blank" class="flex items-center gap-x-2">
                   <AccessibilityIcon class="size-4" />
@@ -96,7 +57,7 @@ onMounted(async () => {
               <ExclamationTriangleIcon class="size-4" />
               <AlertTitle>Heads up!</AlertTitle>
               <AlertDescription>
-                The app is still in development and may not properly work. Please report any issues you encounter.
+                The app is still in alpha release phase and may not properly work. Please report any issues you encounter.
               </AlertDescription>
             </Alert>
           </div>
@@ -187,29 +148,27 @@ onMounted(async () => {
       </div>
     </div>
   </section>
-  <section id="faqs" class="overflow-hidden py-20">
+  <section id="faqs" class="overflow-hidden py-20 bg-slate-100">
     <div class="container p-6">
-      <div class="max-w-xl mx-auto">
-        <h2 class="text-3xl font-medium tracking-tight text-slate-900 text-center">
+      <div class="mx-auto max-w-2xl lg:max-w-3xl text-center">
+        <h2 class="text-3xl font-medium tracking-tight text-slate-900">
           Frequently Asked Questions
         </h2>
-        <p class="mt-2 text-lg text-slate-600 text-center">
-          If you have anything else you want to ask, <a href="mailto:tjthavarshan@gmail.com" class="text-slate-900 underline">reach out to us.</a>.
+        <p class="mt-8 text-lg text-slate-600">
+          If you have anything else you want to ask, <a class="underline text-slate-800" href="https://github.com/stellar-comet/comet/discussions">reach out to us.</a>
         </p>
-        <div class="mt-6">
-          <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
-            <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
-              <AccordionTrigger :id="`trigger-${item.value}`">
-                <h3 class="flex items-center justify-between py-4 text-lg font-semibold text-slate-900">
-                  {{ item.title }}
-                </h3>
-              </AccordionTrigger>
-              <AccordionContent :id="`trigger-${item.value}`">
-                <p class="text-slate-600 w-full">{{ item.content }}</p>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
+      </div>
+      <div class="mt-12 md:grid md:grid-cols-3 md:gap-6">
+        <Card v-for="item in accordionItems" :key="item.value" class="bg-white">
+          <CardHeader>
+            <CardTitle>{{ item.title }}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <CardDescription>
+              {{ item.content }}
+            </CardDescription>
+          </CardContent>
+        </Card>
       </div>
     </div>
   </section>

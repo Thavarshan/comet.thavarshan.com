@@ -13,7 +13,7 @@ defineProps<{
   <div>
     <NuxtLink :to="href">
       <svg viewBox="0 0 496 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        :class="cn('w-10 h-10', classes)"
+        :class="cn('size-10', classes)"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Comet | Video Converter</title>
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

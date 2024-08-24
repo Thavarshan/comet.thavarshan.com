@@ -17,6 +17,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "install": "^0.13.0",
+    "lucide-vue-next": "^0.435.0",
     "npm": "^10.8.2",
     "nuxt": "^3.12.4",
     "radix-vue": "^1.9.4",

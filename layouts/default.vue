@@ -32,32 +32,36 @@ const footerLinks: NavigationLink[] = [
 
 <template>
   <div>
-    <header class="container p-6 flex flex-col md:flex-row items-center gap-y-4 md:gap-x-10">
-      <div>
+    <header class="flex h-16 items-center gap-4 bg-white">
+      <nav class="container hidden gap-6 text-lg font-medium md:flex md:items-center md:gap-5 lg:gap-6 px-6 h-full">
         <Logo href="/" />
-      </div>
-      <div class="flex-1 flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-x-0">
-        <NavigationMenu>
-          <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
-            <NavigationMenuItem v-for="section in sections" :key="section.title">
-              <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="section.href">
-                {{ section.title }}
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        <div class="flex items-center gap-x-3">
-          <a href="https://github.com/stellar-comet/comet" target="_blank" class="text-slate-900">
-            <GithubLogoIcon class="size-6" />
-          </a>
-          <!-- <Button type="button">Download</Button> -->
+        <div class="flex-1 flex flex-col md:flex-row items-center justify-between">
+          <NavigationMenu>
+            <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
+              <NavigationMenuItem v-for="section in sections" :key="section.title">
+                <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="section.href">
+                  {{ section.title }}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+          <div class="flex items-center gap-x-4">
+            <a href="https://github.com/stellar-comet/comet" target="_blank" class="text-slate-900">
+              <GithubLogoIcon class="size-6" />
+            </a>
+            <Button type="button" as-child>
+              <NuxtLink to="/downloads">
+                Download
+              </NuxtLink>
+            </Button>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <main class="py-6" role="main">
+    <main role="main">
       <slot />
     </main>
-    <footer class="border-t border-slate-200">
+    <footer>
       <div class="container p-6">
         <div class="flex flex-col items-center justify-center gap-y-12 pb-6 pt-16 lg:py-16">
           <div>
