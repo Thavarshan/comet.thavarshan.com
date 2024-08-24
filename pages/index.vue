@@ -24,7 +24,7 @@ const accordionItems = faqs.map((item, index) => ({
 </script>
 
 <template>
-  <section id="hero" class="overflow-hidden pt-20 pb-24">
+  <section id="hero" class="overflow-hidden pt-20 pb-72">
     <div class="container p-6">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
