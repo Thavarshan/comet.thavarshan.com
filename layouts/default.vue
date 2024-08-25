@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { GithubLogoIcon } from '@radix-icons/vue';
+import {
+  GithubLogoIcon,
+  HamburgerMenuIcon,
+} from '@radix-icons/vue';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -33,11 +36,11 @@ const footerLinks: NavigationLink[] = [
 <template>
   <div>
     <header class="flex h-16 items-center gap-4 bg-white">
-      <nav class="container hidden gap-6 text-lg font-medium md:flex md:items-center md:gap-5 lg:gap-6 px-6 h-full">
+      <nav class="container gap-6 text-lg font-medium flex items-center md:gap-5 lg:gap-6 px-6 h-full">
         <Logo href="/" />
-        <div class="flex-1 flex flex-col md:flex-row items-center justify-between">
+        <div class="hidden md:flex flex-1 items-center justify-between">
           <NavigationMenu>
-            <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
+            <NavigationMenuList class="flex gap-y-2 md:gap-x-4">
               <NavigationMenuItem v-for="section in sections" :key="section.title">
                 <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="section.href">
                   {{ section.title }}
@@ -56,6 +59,22 @@ const footerLinks: NavigationLink[] = [
             </Button>
           </div>
         </div>
+        <Sheet>
+          <SheetTrigger as-child>
+            <Button variant="secondary" size="icon" class="shrink-0 md:hidden ml-auto">
+              <HamburgerMenuIcon class="size-5 text-slate-900" />
+              <span class="sr-only">Toggle navigation menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left">
+            <nav class="grid gap-6 text-lg font-medium">
+              <Logo class="mb-6 -mt-2" href="/" />
+              <NuxtLink v-for="section in sections" :key="section.title" :to="section.href" class="hover:text-foreground">
+                {{ section.title }}
+              </NuxtLink>
+            </nav>
+          </SheetContent>
+        </Sheet>
       </nav>
     </header>
     <main role="main">
@@ -63,8 +82,8 @@ const footerLinks: NavigationLink[] = [
     </main>
     <footer>
       <div class="container p-6">
-        <div class="flex flex-col items-center justify-center gap-y-12 pb-6 pt-16 lg:py-16">
-          <div>
+        <div class="flex flex-col items-center justify-center gap-y-12 pb-6 pt-6 sm:pt-16 lg:py-16">
+          <div class="flex flex-col items-center">
             <div class="flex flex-col items-center justify-center">
               <Logo href="/" />
               <p class="text-lg font-bold text-slate-900 leading-tight mt-2">Comet</p>
@@ -82,11 +101,8 @@ const footerLinks: NavigationLink[] = [
           </div>
         </div>
         <div class="flex flex-col items-center pb-12 justify-center">
-          <p class="mt-6 text-sm text-slate-500 md:mt-0">
-            Made with ❤️ by <a href="https://github.com/Thavarshan/" target="_blank" class="underline" rel="noopener noreferrer">Jerome Thayananthajothy</a>
-          </p>
-          <p class="mt-6 text-sm text-slate-500 md:mt-0">
-            and given for free to the World
+          <p class="mt-6 text-sm text-slate-500 md:mt-0 text-center max-w-sm">
+            Made with ❤️ by <a href="https://github.com/Thavarshan/" target="_blank" class="underline" rel="noopener noreferrer">Jerome Thayananthajothy</a> and given for free to the World
           </p>
         </div>
       </div>

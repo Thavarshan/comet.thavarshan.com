@@ -24,7 +24,7 @@ const accordionItems = faqs.map((item, index) => ({
 </script>
 
 <template>
-  <section id="hero" class="overflow-hidden pt-20 pb-72">
+  <section id="hero" class="overflow-hidden pt-6 md:pt-20 pb-[400px] sm:pb-[700px] md:pb-[900px] lg:pb-52">
     <div class="container p-6">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
@@ -62,8 +62,8 @@ const accordionItems = faqs.map((item, index) => ({
             </Alert>
           </div>
         </div>
-        <div class="relative mt-12 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
-          <div class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-slate-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
+        <div class="relative mt-6 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+          <div class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-slate-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] md:top-16 md:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
             <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true" class="absolute inset-0 h-full w-full animate-spin-slow">
               <path d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z" stroke="#D4D4D4" stroke-opacity="0.7"></path>
               <path d="M513 1025C230.23 1025 1 795.77 1 513" stroke="url(#gradient-1)" stroke-linecap="round"></path>
@@ -90,7 +90,7 @@ const accordionItems = faqs.map((item, index) => ({
       </div>
     </div>
   </section>
-  <section id="features" class="overflow-hidden py-20 bg-slate-900">
+  <section id="features" class="overflow-hidden py-12 md:py-20 bg-slate-900">
     <div class="container p-6">
       <div class="mx-auto max-w-2xl lg:max-w-3xl text-center">
         <h2 class="text-3xl font-medium tracking-tight text-white">
@@ -105,8 +105,8 @@ const accordionItems = faqs.map((item, index) => ({
           <img src="/images/demo.gif" alt="Comet" class="pointer-events-none w-full h-auto" />
         </div>
       </div>
-      <div class="mt-12 flex items-center gap-x-6">
-        <div class="flex-1 relative rounded-2xl bg-slate-700/30">
+      <div class="mt-12 flex flex-col md:flex-row items-center gap-6 md:gap-x-6">
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
           <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
           <div class="relative z-10 p-8">
             <LaptopIcon class="h-8 w-8 text-slate-400" />
@@ -119,7 +119,7 @@ const accordionItems = faqs.map((item, index) => ({
             </p>
           </div>
         </div>
-        <div class="flex-1 relative rounded-2xl bg-slate-700/30">
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
           <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
           <div class="relative z-10 p-8">
             <VideoIcon class="h-8 w-8 text-slate-400" />
@@ -132,7 +132,7 @@ const accordionItems = faqs.map((item, index) => ({
             </p>
           </div>
         </div>
-        <div class="flex-1 relative rounded-2xl bg-slate-700/30">
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
           <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
           <div class="relative z-10 p-8">
             <ArchiveIcon class="h-8 w-8 text-slate-400" />
@@ -148,9 +148,9 @@ const accordionItems = faqs.map((item, index) => ({
       </div>
     </div>
   </section>
-  <section id="faqs" class="overflow-hidden py-20 bg-slate-100">
+  <section id="faqs" class="overflow-hidden pt-12 pb-0 md:py-20 bg-slate-100">
     <div class="container p-6">
-      <div class="mx-auto max-w-2xl lg:max-w-3xl text-center">
+      <div class="mx-auto w-full md:max-w-2xl lg:max-w-3xl text-center">
         <h2 class="text-3xl font-medium tracking-tight text-slate-900">
           Frequently Asked Questions
         </h2>
@@ -158,7 +158,7 @@ const accordionItems = faqs.map((item, index) => ({
           If you have anything else you want to ask, <a class="underline text-slate-800" href="https://github.com/stellar-comet/comet/discussions">reach out to us.</a>
         </p>
       </div>
-      <div class="mt-12 md:grid md:grid-cols-3 md:gap-6">
+      <div class="mt-12 grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 gap-6">
         <Card v-for="item in accordionItems" :key="item.value" class="bg-white">
           <CardHeader>
             <CardTitle>{{ item.title }}</CardTitle>
