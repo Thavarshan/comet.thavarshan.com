@@ -102,7 +102,13 @@ const accordionItems = faqs.map((item, index) => ({
       </div>
       <div class="mt-12 flex items-center justify-center">
         <div class="overflow-hidden rounded-xl w-[800px]">
-          <img src="/images/demo.gif" alt="Comet" class="pointer-events-none w-full h-auto" />
+          <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/1002513386?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Comet Video Converter v0.0.3 - Demo"></iframe>
+          </div>
         </div>
       </div>
       <div class="mt-12 flex flex-col md:flex-row items-center gap-6 md:gap-x-6">
