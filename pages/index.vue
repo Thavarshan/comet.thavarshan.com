@@ -16,6 +16,10 @@ import {
 } from '@radix-icons/vue';
 import faqs from '@/content/faqs.json';
 
+definePageMeta({
+  title: 'Comet | Effortless Video Conversion'
+});
+
 const accordionItems = faqs.map((item, index) => ({
   value: `item-${index + 1}`,
   title: item.title,

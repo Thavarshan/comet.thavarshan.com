@@ -11,6 +11,16 @@ import {
 
 const config = useRuntimeConfig();
 
+useHead({
+  title: 'Download Comet - Mac, Windows and Linux',
+  meta: [
+    {
+      name: 'description',
+      content: 'Free and built on open source technologies, Comet is available for download on all major platforms.',
+    }
+  ],
+});
+
 const macDownloads = ref<{ url: string; extension: string; architecture: string; }[]>([]);
 const windowsDownloads = ref<{ url: string; extension: string; architecture: string; }[]>([]);
 const linuxDownloads = ref<{ url: string; extension: string; architecture: string; }[]>([]);
