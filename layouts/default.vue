@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {
+  HeartIcon,
   GithubLogoIcon,
   HamburgerMenuIcon,
 } from '@radix-icons/vue';
@@ -49,14 +50,15 @@ const footerLinks: NavigationLink[] = [
             </NavigationMenuList>
           </NavigationMenu>
           <div class="flex items-center gap-x-4">
+            <Button variant="outline" as-child>
+              <a href="https://github.com/sponsors/Thavarshan" target="_blank">
+                <HeartIcon class="size-4 text-pink-500 mr-2" />
+                Sponsor
+              </a>
+            </Button>
             <a href="https://github.com/stellar-comet/comet" target="_blank" class="text-slate-900">
               <GithubLogoIcon class="size-6" />
             </a>
-            <Button type="button" as-child>
-              <NuxtLink to="/downloads">
-                Download
-              </NuxtLink>
-            </Button>
           </div>
         </div>
         <Sheet>
