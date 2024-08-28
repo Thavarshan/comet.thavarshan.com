@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const SITE_DECRIPTION = 'Comet is the no-nonsense video converter you’ve been waiting for. Built because nothing else was simple enough, it lets you convert your videos quickly and easily—no fluff, just results.';
+import { SITE_TITLE, SITE_DECRIPTION } from './seo';
 
 useHead({
-  title: 'Comet | Effortless Video Conversion',
+  title: SITE_TITLE,
   meta: [
     {
       name: 'description',
@@ -19,8 +19,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: 'Comet | Effortless Video Conversion',
-  ogTitle: 'Comet | Effortless Video Conversion',
+  title: SITE_TITLE,
+  ogTitle: SITE_TITLE,
   description: SITE_DECRIPTION,
   ogDescription: SITE_DECRIPTION,
   ogImage: 'https://github.com/stellar-comet/comet/blob/main/src/assets/images/Banner.jpg',

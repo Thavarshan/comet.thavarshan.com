@@ -1,3 +1,5 @@
+import { SITE_TITLE, SITE_DECRIPTION, LOCALE } from './seo';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -18,9 +20,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://comet.thavarshan.com',
-    name: 'Comet | Effortless Video Conversion',
-    description: 'Comet is the no-nonsense video converter you’ve been waiting for. Built because nothing else was simple enough, it lets you convert your videos quickly and easily—no fluff, just results.',
-    defaultLocale: 'en',
+    name: SITE_TITLE,
+    description: SITE_DECRIPTION,
+    defaultLocale: LOCALE,
     trailingSlash: true
   },
   robots: {

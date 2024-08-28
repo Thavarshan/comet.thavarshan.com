@@ -8,6 +8,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { SITE_TITLE } from '../seo';
+
+definePageMeta({
+  title: SITE_TITLE
+});
 
 const config = useRuntimeConfig();
 
