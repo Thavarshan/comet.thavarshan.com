@@ -34,7 +34,7 @@ async function fetchLatestRelease() {
   const octokit = new Octokit({ auth: config.githubApiKey });
 
   const response = await octokit.request('GET /repos/{owner}/{repo}/releases', {
-    owner: config.githubUsername as string || 'Thavarshan',
+    owner: config.githubUsername as string || 'stellar-comet',
     repo: 'comet',
   });
 

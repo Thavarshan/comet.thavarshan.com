@@ -57,15 +57,6 @@ const accordionItems = faqs.map((item, index) => ({
               </Button>
             </div>
           </div>
-          <div class="mt-6 max-w-sm">
-            <Alert variant="destructive">
-              <ExclamationTriangleIcon class="size-4" />
-              <AlertTitle>Heads up!</AlertTitle>
-              <AlertDescription>
-                The app is still in alpha release phase and may not properly work. Please report any issues you encounter.
-              </AlertDescription>
-            </Alert>
-          </div>
         </div>
         <div class="relative mt-6 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
           <div class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-slate-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] md:top-16 md:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
