@@ -10,12 +10,14 @@ import {
   LaptopIcon,
   VideoIcon,
   DownloadIcon,
-  ChevronDownIcon,
-  ExclamationTriangleIcon,
+  GlobeIcon,
+  MoonIcon,
+  RocketIcon,
   AccessibilityIcon,
 } from '@radix-icons/vue';
 import faqs from '@/content/faqs.json';
 import { SITE_TITLE } from '../seo';
+import { Moon } from 'lucide-vue-next';
 
 definePageMeta({
   title: SITE_TITLE
@@ -35,10 +37,10 @@ const accordionItems = faqs.map((item, index) => ({
         <div class="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
           <div>
             <h1 class="text-4xl font-medium tracking-tight text-slate-900">
-              Effortless Video Conversion
+              Effortless <span>Video</span> and <span>Audio</span> Conversion
             </h1>
             <p class="mt-6 text-lg text-slate-600">
-              Comet is the straightforward video converter you've been looking for. Designed for simplicity, it allows you to convert your videos quickly and effortlessly—no unnecessary features, just effective results.
+              Comet is the straightforward video and audio converter you've been looking for. Designed for simplicity, it allows you to convert your media files quickly and effortlessly—no unnecessary features, just effective results.
             </p>
           </div>
           <div class="mt-8 flex items-center gap-x-6 gap-y-4">
@@ -99,10 +101,10 @@ const accordionItems = faqs.map((item, index) => ({
       </div>
       <div class="mt-12 flex items-center justify-center">
         <div class="overflow-hidden rounded-2xl w-[800px]">
-          <img src="/images/demo.gif" alt="Comet" class="pointer-events-none w-full h-auto" />
+          <video src="/videos/demo.mp4" controls class="w-full h-auto"></video>
         </div>
       </div>
-      <div class="mt-12 flex flex-col md:flex-row items-center gap-6 md:gap-x-6">
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto">
         <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
           <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
           <div class="relative z-10 p-8">
@@ -122,10 +124,10 @@ const accordionItems = faqs.map((item, index) => ({
             <VideoIcon class="h-8 w-8 text-slate-400" />
             <h3 class="mt-6 text-lg font-semibold text-white">
               <span class="absolute inset-0 rounded-lg"></span>
-              Multiple Video Formats
+              Multiple Video/Audio Formats
             </h3>
             <p class="mt-2 text-sm text-slate-400">
-              Supporting all major video formats, Comet lets you convert your videos to any format you need.
+              Supporting all major video and audio formats, Comet lets you convert your media files to any format you need.
             </p>
           </div>
         </div>
@@ -138,7 +140,46 @@ const accordionItems = faqs.map((item, index) => ({
               Bulk File Conversion
             </h3>
             <p class="mt-2 text-sm text-slate-400">
-              Convert multiple videos at once with Comet’s bulk file conversion feature, saving you time and effort.
+              Convert multiple video/audio files at once with Comet’s bulk file conversion feature, saving you time and effort.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
+          <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
+          <div class="relative z-10 p-8">
+            <GlobeIcon class="h-8 w-8 text-slate-400" />
+            <h3 class="mt-6 text-lg font-semibold text-white">
+              <span class="absolute inset-0 rounded-lg"></span>
+              Multi-Language Support
+            </h3>
+            <p class="mt-2 text-sm text-slate-400">
+              Now available in multiple languages, Comet makes it easier for users around the world to convert their media files.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
+          <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
+          <div class="relative z-10 p-8">
+            <MoonIcon class="h-8 w-8 text-slate-400" />
+            <h3 class="mt-6 text-lg font-semibold text-white">
+              <span class="absolute inset-0 rounded-lg"></span>
+              Dark mode
+            </h3>
+            <p class="mt-2 text-sm text-slate-400">
+              With the dark mode feature, Comet offers a more comfortable viewing experience for users who prefer it.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-1 relative rounded-2xl bg-slate-700/30">
+          <div class="absolute inset-0" style="border-radius: 16px; opacity: 1;"></div>
+          <div class="relative z-10 p-8">
+            <RocketIcon class="h-8 w-8 text-slate-400" />
+            <h3 class="mt-6 text-lg font-semibold text-white">
+              <span class="absolute inset-0 rounded-lg"></span>
+              Improved Performance
+            </h3>
+            <p class="mt-2 text-sm text-slate-400">
+              Comet has been optimized for better performance, ensuring faster and more efficient file conversions.
             </p>
           </div>
         </div>

@@ -1,27 +1,23 @@
 [
   {
     "title": "What is Comet?",
-    "content": "Comet is a minimalist, no-nonsense video converter app designed to handle your video conversion needs with ease. It was created because there wasn't an app that did exactly what we wanted—simple, fast, and effective video conversion without unnecessary features."
+    "content": "Comet is a cross-platform video and audio converter application designed to make media conversion as easy and accessible as possible. Leveraging the power of FFmpeg, Comet allows users to convert video and audio files into a variety of formats, all within a simple, intuitive interface."
   },
   {
-    "title": "What video formats does Comet support?",
-    "content": "In this initial release, Comet supports a wide range of popular video formats including MP4, MKV, AVI, MOV, and more. We’re working on expanding format support in future updates."
+    "title": "What formats does Comet support?",
+    "content": "Comet supports a wide range of popular video formats including MP4, MKV, AVI, MOV, and more. Additionally, it supports audio formats like MP3, WAV, AAC, and FLAC. We’re working on expanding format support in future updates."
   },
   {
     "title": "Is Comet free to use?",
-    "content": "Yes! Comet is completely free to use for personal video conversion needs. We believe in providing powerful tools without any cost barriers."
+    "content": "Yes! Comet is completely free to use for personal video and audio conversion needs. We believe in providing powerful tools without any cost barriers."
   },
   {
     "title": "Which platforms does Comet support?",
     "content": "Comet is available on Windows, macOS, and Linux. We’ve ensured compatibility across these major operating systems so that everyone can benefit from Comet."
   },
   {
-    "title": "Can I trust Comet with my videos?",
-    "content": "Absolutely. Comet processes your videos locally on your machine, so your files are never uploaded or shared. We value your privacy and security."
-  },
-  {
-    "title": "This is labeled as an alpha release. What does that mean?",
-    "content": "The alpha label indicates that this is an early version of Comet. While it is functional, it may still have bugs or issues. We encourage you to try it out and share any feedback you have to help us improve."
+    "title": "Can I trust Comet with my video/audio files?",
+    "content": "Absolutely. Comet processes your video/audio files locally on your machine, so your files are never uploaded or shared. We value your privacy and security."
   },
   {
     "title": "How do I report an issue or provide feedback?",
@@ -29,11 +25,11 @@
   },
   {
     "title": "Do I need to sign the app to use it?",
-    "content": "No, you can use Comet without code signing. However, certain operating systems might display warnings when running unsigned apps. We're working on getting Comet officially signed in future releases."
+    "content": "No, you can use Comet without code signing. However, certain operating systems might display warnings when running unsigned apps. On macOS, click 'Okay', then go to 'Settings / Privacy & Security' and click 'Open anyway'. On Windows, you may see a warning message indicating that the app is from an unknown publisher. Click 'More info' and then 'Run anyway' to proceed. We're working on getting Comet officially signed in future releases."
   },
   {
     "title": "Will Comet receive updates?",
-    "content": "Yes, we plan to regularly update Comet with new features, bug fixes, and support for more video formats. Stay tuned!"
+    "content": "Yes, we plan to regularly update Comet with new features, bug fixes, and support for more video and audio formats. Stay tuned!"
   },
   {
     "title": "Is Comet open-source?",
