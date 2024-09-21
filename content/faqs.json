@@ -1,23 +1,23 @@
 [
   {
     "title": "What is Comet?",
-    "content": "Comet is a cross-platform video and audio converter application designed to make media conversion as easy and accessible as possible. Leveraging the power of FFmpeg, Comet allows users to convert video and audio files into a variety of formats, all within a simple, intuitive interface."
+    "content": "Comet is a cross-platform media converter application designed to make video, audio, and image conversion as easy and accessible as possible. Leveraging the power of FFmpeg and other libraries, Comet allows users to convert video, audio, and image files into a variety of formats, all within a simple, intuitive interface."
   },
   {
     "title": "What formats does Comet support?",
-    "content": "Comet supports a wide range of popular video formats including MP4, MKV, AVI, MOV, and more. Additionally, it supports audio formats like MP3, WAV, AAC, and FLAC. We’re working on expanding format support in future updates."
+    "content": "Comet supports a wide range of popular video formats including MP4, MKV, AVI, MOV, and more. Additionally, it supports audio formats like MP3, WAV, AAC, and FLAC. For images, Comet supports formats such as JPEG, PNG, BMP, and GIF. We’re working on expanding format support in future updates."
   },
   {
     "title": "Is Comet free to use?",
-    "content": "Yes! Comet is completely free to use for personal video and audio conversion needs. We believe in providing powerful tools without any cost barriers."
+    "content": "Yes! Comet is completely free to use for personal media conversion needs. We believe in providing powerful tools without any cost barriers."
   },
   {
     "title": "Which platforms does Comet support?",
     "content": "Comet is available on Windows, macOS, and Linux. We’ve ensured compatibility across these major operating systems so that everyone can benefit from Comet."
   },
   {
-    "title": "Can I trust Comet with my video/audio files?",
-    "content": "Absolutely. Comet processes your video/audio files locally on your machine, so your files are never uploaded or shared. We value your privacy and security."
+    "title": "Can I trust Comet with my media files?",
+    "content": "Absolutely. Comet processes your media files locally on your machine, so your files are never uploaded or shared. We value your privacy and security."
   },
   {
     "title": "How do I report an issue or provide feedback?",
@@ -29,7 +29,7 @@
   },
   {
     "title": "Will Comet receive updates?",
-    "content": "Yes, we plan to regularly update Comet with new features, bug fixes, and support for more video and audio formats. Stay tuned!"
+    "content": "Yes, we plan to regularly update Comet with new features, bug fixes, and support for more video, audio, and image formats. Stay tuned!"
   },
   {
     "title": "Is Comet open-source?",

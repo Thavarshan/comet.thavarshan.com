@@ -15,7 +15,7 @@ defineProps<{
       <svg viewBox="0 0 496 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
         :class="cn('size-10', classes)"
         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Comet | Video Converter</title>
+        <title>Comet | Media Converter</title>
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="logo"
               transform="translate(247.9071, 255.9934) scale(-1, 1) translate(-247.9071, -255.9934)"

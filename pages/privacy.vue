@@ -12,7 +12,7 @@ definePageMeta({
       <div class="prose">
         <h1>Privacy Policy</h1>
 
-        <h3>Comet - A No-Nonsense Video Conversion Tool</h3>
+        <h3>Comet - A No-Nonsense Media Conversion Tool</h3>
 
         <p><strong>Effective Date: August 18, 2024</strong></p>
 
@@ -20,11 +20,11 @@ definePageMeta({
 
         <h3>No Data Collection</h3>
 
-        <p>Comet is designed to be a simple, straightforward video conversion tool. To that end, <strong>we do not collect, store, or share any personal data or information of any kind</strong>. When you use Comet, rest assured that your files, activities, and preferences remain entirely on your device.</p>
+        <p>Comet is designed to be a simple, straightforward media conversion tool. To that end, <strong>we do not collect, store, or share any personal data or information of any kind</strong>. When you use Comet, rest assured that your files, activities, and preferences remain entirely on your device.</p>
 
         <h3>Offline Processing</h3>
 
-        <p>All video conversions and processes carried out by Comet occur locally on your device. We do not send any of your files or data to external servers or third parties. Comet relies on the power of <a href="https://ffmpeg.org/">FFmpeg</a> to handle video processing, and everything happens within the confines of your machine.</p>
+        <p>All media conversions and processes carried out by Comet occur locally on your device. We do not send any of your files or data to external servers or third parties. Comet relies on the power of <a href="https://ffmpeg.org/">FFmpeg</a> to handle media processing, and everything happens within the confines of your machine.</p>
 
         <h3>Transparency and Security</h3>
 

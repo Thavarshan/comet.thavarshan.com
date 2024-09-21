@@ -89,7 +89,7 @@ const footerLinks: NavigationLink[] = [
             <div class="flex flex-col items-center justify-center">
               <Logo href="/" />
               <p class="text-lg font-bold text-slate-900 leading-tight mt-2">Comet</p>
-              <p class="text-sm text-slate-500">a simple video converter</p>
+              <p class="text-sm text-slate-500">a simple media converter</p>
             </div>
             <NavigationMenu class="mt-11">
               <NavigationMenuList class="flex flex-col md:flex-row gap-y-2 md:gap-x-4">

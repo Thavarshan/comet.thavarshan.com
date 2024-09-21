@@ -36,9 +36,9 @@ export default defineNuxtConfig({
         images: [
           {
             loc: 'https://comet.thavarshan.com/images/screenshot_1.png',
-            caption: 'Comet Video Converter',
+            caption: 'Comet Media Converter',
             geoLocation: 'United Kingdom',
-            title: 'Comet Video Converter',
+            title: 'Comet Media Converter',
             license: 'https://creativecommons.org/licenses/by/4.0/'
           }
         ]

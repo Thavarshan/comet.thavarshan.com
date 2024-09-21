@@ -12,7 +12,7 @@ definePageMeta({
       <div class="prose">
         <h1>Terms and Conditions</h1>
 
-        <h3>Comet - A No-Nonsense Video Conversion Tool</h3>
+        <h3>Comet - A No-Nonsense Media Conversion Tool</h3>
 
         <p><strong>Effective Date: August 18, 2024</strong></p>
 
