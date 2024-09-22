@@ -1,5 +1,5 @@
 import { defineNuxtModule } from '@nuxt/kit';
-import { installNuxtSiteCon } from 'nuxt-site-config-kit';
+import { installNuxtSiteConfig } from 'nuxt-site-config-kit';
 
 export default defineNuxtModule({
   async setup(options) {
