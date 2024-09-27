@@ -11,6 +11,14 @@ useHead({
     {
       name: 'robots',
       content: 'index, follow, max-image-preview:large, max-snippet:-1, max-media-preview:-1'
+    },
+    {
+      name: 'msapplication-TileColor',
+      content: '#da532c'
+    },
+    {
+      name: 'theme-color',
+      content: '#ffffff'
     }
   ],
   bodyAttrs: {

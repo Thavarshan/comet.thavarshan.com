@@ -17,7 +17,6 @@ import {
 } from '@radix-icons/vue';
 import faqs from '@/content/faqs.json';
 import { SITE_TITLE } from '../seo';
-import { Moon } from 'lucide-vue-next';
 
 definePageMeta({
   title: SITE_TITLE
