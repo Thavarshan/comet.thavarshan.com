@@ -21,16 +21,16 @@ type NavigationLink = {
 const sections: NavigationLink[] = [
   { title: 'Home', href: '/' },
   { title: 'Features', href: '/#features' },
-  { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
+  // { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
   { title: 'FAQs', href: '/#faqs' },
 ];
 
 const footerLinks: NavigationLink[] = [
-  { title: 'Changelog', href: 'https://github.com/stellar-comet/comet/blob/main/CHANGELOG.md' },
+  // { title: 'Changelog', href: 'https://github.com/stellar-comet/comet/blob/main/CHANGELOG.md' },
   { title: 'Disclaimer', href: '/disclaimer' },
   { title: 'Privacy', href: '/privacy' },
   { title: 'Terms', href: '/terms' },
-  { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
+  // { title: 'Support', href: 'https://github.com/stellar-comet/comet/discussions' },
 ];
 </script>
 
@@ -40,7 +40,7 @@ const footerLinks: NavigationLink[] = [
       <nav class="container gap-6 text-lg font-medium flex items-center md:gap-5 lg:gap-6 px-6 h-full">
         <Logo href="/" />
         <div class="hidden md:flex flex-1 items-center justify-between">
-          <NavigationMenu>
+          <!-- <NavigationMenu>
             <NavigationMenuList class="flex gap-y-2 md:gap-x-4">
               <NavigationMenuItem v-for="section in sections" :key="section.title">
                 <NavigationMenuLink :class="navigationMenuTriggerStyle()" :href="section.href">
@@ -48,8 +48,8 @@ const footerLinks: NavigationLink[] = [
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
-          </NavigationMenu>
-          <div class="flex items-center gap-x-4">
+          </NavigationMenu> -->
+          <div class="flex items-center gap-x-4 ml-auto">
             <Button variant="outline" as-child>
               <a href="https://github.com/sponsors/Thavarshan" target="_blank">
                 <HeartIcon class="size-4 text-pink-500 mr-2" />
